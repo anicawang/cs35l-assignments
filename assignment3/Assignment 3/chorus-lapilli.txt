@@ -1,0 +1,31 @@
+Anica Wang
+305-532-153
+Professor Eggert
+CS 35L
+Chorus Lapilli Notes
+after implementing the tic tac toe game, there were a few changes 
+required to change it into a chorus lapilli game:
+•	first, I set up 3 turns for each player
+o	each player can only have 3 pieces on the board at once, 
+	for a total of 6 pieces maximum at a time
+o	if they already have 3 pieces, they must select a piece 
+	and then move it to a valid spot
+	check that the move is valid 
+	check if there is a piece in the center
+•	if there is, it must be moved
+•	otherwise it must be a winning move
+o	all of this was modified in the handleClick function to 
+	cater to the new rules in the game
+•	to move a piece
+o	store previous spot in order to check if new space is
+	valid
+o	select an existing piece and turn it blank
+	like player “picked it up”
+o	select a blank space that is a valid place to move (has 
+	to be adjacent to previous spot and cannot have a piece 
+	already there)
+	if the player selects the same square the piece was 
+	originally on, they still need to complete a move
+	change turns after every valid move
+o	reject invalid moves
+
